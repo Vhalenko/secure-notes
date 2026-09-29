@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="SecureNotes.API/SecureNotes.API.csproj" />
+  <Project Path="SecureNotes.Core/SecureNotes.Core.csproj" />
+  <Project Path="SecureNotes.Infrastructure/SecureNotes.Infrastructure.csproj" />
+  <Project Path="SecureNotes.Tests/SecureNotes.Tests.csproj" />
+</Solution>
