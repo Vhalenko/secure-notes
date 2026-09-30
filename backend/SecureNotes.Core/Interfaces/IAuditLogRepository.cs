@@ -1,11 +1,10 @@
 using SecureNotes.Core.Entities;
 
-namespace SecureNotes.Core.Interfaces
+namespace SecureNotes.Core.Interfaces;
+
+public interface IAuditLogRepository
 {
-    public interface IAuditLogRepository
-    {
-        Task<AuditLog> CreateAsync(AuditLog log);
-        Task<IEnumerable<AuditLog>> GetByUserIdAsync(Guid userId);
-        Task<IEnumerable<AuditLog>> GetAllAsync();
-    }
+    Task CreateAsync(AuditLog log);
+    Task<IEnumerable<AuditLog>> GetByUserIdAsync(Guid userId);
+    Task<IEnumerable<AuditLog>> GetAllAsync();
 }

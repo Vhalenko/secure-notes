@@ -4,7 +4,7 @@ namespace SecureNotes.Core.Interfaces
 {
     public interface INoteRepository
     {
-        Task<Note?> GetNoteByIdAsync(Guid id);
+        Task<Note?> GetByIdAsync(Guid id);
         Task<IEnumerable<Note>> GetByUserIdAsync(Guid userId);
         Task<Note?> GetByShareTokenAsync(string token);
         Task<Note> CreateAsync(Note note);
